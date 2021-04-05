@@ -23,12 +23,8 @@ export class AppComponent {
         for (let satellite of fetchedSatellites) {
           this.sourceList.push(new Satellite(satellite.name, satellite.type, satellite.launchDate, satellite.orbitType, satellite.operational))
         }
-        // TODO: loop over satellites
-        // TODO: create a Satellite object using new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
-        // TODO: add the new Satellite object to sourceList using: this.sourceList.push(satellite);
 
       }.bind(this));
     }.bind(this));
-
   }
 }
